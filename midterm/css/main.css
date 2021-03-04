@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    line-height: 1;
+  
+}
+
+
+}
+nav ul  {
+    list-style: none;
+
+}
+nav ul li {
+    display: inline-block;
+    width: 25%;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+nav ul li a {
+    color: black;
+  
+} 
+h4+form{
+    border: 1px solid black;
+}
+section form ul li{
+    list-style: none;
+   
+}
+nav a:hover {
+    background-color: burlywood;
+}
+h1 {
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background: cover;
+    text-align:center;
+    color: white;
+    font-size: 3rem;
+    padding: 10rem 0;
+      
+    
+   
+    
+    
+    
+    
+}
+
+    nav ul li a:link {
+    border: 3px solid #343434;
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding:0rem;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}
+ 
+
+
+.image { 
+    float: left;
+    width: 100%;
+    margin: 1.5rem 1rem 1rem 0;
+
+}
+p{
+    
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;}
+    
+    
+    
+    article img{
+        float: left;
+        width: 10%;
+        margin: 0.5rem 1.5rem 1.5rem 0; 
+    
+}
+nav, article, section, aside {
+    width: 90%;
+    background-color:rgba(255, 255, 255, 0.2) ;
+    padding: 1.5em;
+float: 
+align-content: center;
+}
+footer{ 
+    text-align: right;
+
+}
