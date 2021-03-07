@@ -23,7 +23,7 @@ nav ul li a {
     color: black;
   
 } 
-h4+form{
+h3+form{
     border: 1px solid black;
 }
 section form ul li{
@@ -34,67 +34,90 @@ nav a:hover {
     background-color: burlywood;
 }
 h1 {
+    /* adding an image s a background */
     background-image: url("../images/lone-starfish-wide.jpg");
-    background-size: cover;
+    background-size: 33.9em;
     background-position: center;
-    max-width: 100%;
     background-repeat: no-repeat;
-    background: cover;
     text-align:center;
     color: white;
     font-size: 3rem;
-    padding: 10rem 0;
-      
-    
+    padding: 6em 4em 4em 4em
    
-    
-    
-    
-    
+
+  
 }
 
     nav ul li a:link {
-    border: 3px solid #343434;
+   
     font-size: 1.8rem;
     display: inline-block;
     width: 100%;
     text-decoration: none;
     text-align: center;
-    padding:0rem;
+    padding: 1em 2em 1em 2em;
+    
+}
+section { 
+    font-size: 1.5rem;
+
+}
+
+
+
+
+a[href="#story"] {
+  
+    border: 1px solid #343434;
     border-bottom: none;
-    border-top: none;
-    border-left: none;
+     border-top: none;   
+    
 }
- 
 
-
-.image { 
-    float: left;
-    width: 100%;
-    margin: 1.5rem 1rem 1rem 0;
-
-}
 p{
     
     margin: 0.5rem 1rem;
-    font-size: 1.5rem;}
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+}
     
     
-    
-    article img{
+     article img{
         float: left;
-        width: 10%;
+        width: 12em;
+        height: 12em;
         margin: 0.5rem 1.5rem 1.5rem 0; 
     
 }
-nav, article, section, aside {
-    width: 90%;
+article{
+    padding: 20px;
+}
+
+
+nav, main, footer {
+
     background-color:rgba(255, 255, 255, 0.2) ;
-    padding: 1.5em;
-float: 
-align-content: center;
+    padding:1em;
+    max-width: 1600px;
+    margin: auto;
+   
 }
 footer{ 
     text-align: right;
 
+}
+div, input,
+textarea {
+    /* making the text area and input areas span across the screen */
+   width: 97%;
+    padding: 1.5rem;
+   
+    
+}
+textarea {
+    height: 5em;
+    resize: none;
+}
+#radio input {
+    width: 1rem
 }
