@@ -1,4 +1,5 @@
 body{
+    /* choosing the font type and background for the body  */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
     line-height: 1;
@@ -7,6 +8,7 @@ body{
 
 
 }
+/* removing the dots from the nav points */
 nav ul  {
     list-style: none;
 
@@ -19,22 +21,23 @@ nav ul li {
     font-size: 20px;
 
 }
+/* changing the colour of the nav points */
 nav ul li a {
     color: black;
   
 } 
-h3+form{
+/* adding a border around the contact area */
+aside{
     border: 1px solid black;
 }
-section form ul li{
-    list-style: none;
+
    
-}
+/* adding a background for the nav points when we hovered on them */
 nav a:hover {
     background-color: burlywood;
 }
 h1 {
-    /* adding an image s a background */
+    /* adding an image as a background */
     background-image: url("../images/lone-starfish-wide.jpg");
     background-size: 33.9em;
     background-position: center;
@@ -43,11 +46,11 @@ h1 {
     color: white;
     font-size: 3rem;
     padding: 6em 4em 4em 4em
-   
-
-  
 }
 
+h2, h3, h4{
+    font-size: 1.8rem;
+}
     nav ul li a:link {
    
     font-size: 1.8rem;
@@ -77,8 +80,9 @@ a[href="#story"] {
 p{
     
     margin: 0.5rem 1rem;
-    font-size: 1.8rem;
-    line-height: 1.9rem;
+    font-size: 1.7rem;
+   
+   
 }
     
     
@@ -94,6 +98,7 @@ article{
 }
 
 
+/* choosing multiple elements to apply same styles */
 nav, main, footer {
 
     background-color:rgba(255, 255, 255, 0.2) ;
@@ -101,14 +106,11 @@ nav, main, footer {
     max-width: 1600px;
     margin: auto;
    
-}
-footer{ 
-    text-align: right;
 
 }
 div, input,
 textarea {
-    /* making the text area and input areas span across the screen */
+    /* changing the size of the text and input areas */
    width: 97%;
     padding: 1.5rem;
    
@@ -118,6 +120,16 @@ textarea {
     height: 5em;
     resize: none;
 }
+/* id selector */
 #radio input {
     width: 1rem
 }
+/* styling the submit button */
+button {
+    width: 5rem;
+    padding: 1.5em;
+    background-color: inherit;
+}
+footer{ 
+    /* chaning the placement of the copyright */
+    text-align: right;
