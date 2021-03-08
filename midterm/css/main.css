@@ -1,11 +1,22 @@
-body{
-    /* choosing the font type and background for the body  */
+
+
+html{
+    /* choosing the font type and background for the page  */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
-    line-height: 1;
+    
   
 }
+body {
 
+    background-color:rgba(255, 255, 255, 0.2) ;
+    padding:1em;
+    max-width: 1100px;
+    margin: auto;
+    
+   
+
+}
 
 
 /* removing the dots from the nav points */
@@ -16,8 +27,8 @@ nav ul  {
 nav ul li {
     display: inline-block;
     width: 25%;
-    padding: 1em;
-    box-sizing: border-box;
+    padding: 1.4em;
+    
     font-size: 20px;
 
 }
@@ -29,6 +40,7 @@ nav ul li a {
 /* adding a border around the contact area */
 aside{
     border: 1px solid black;
+    width: 100%;
 }
 
    
@@ -39,17 +51,24 @@ nav a:hover {
 h1 {
     /* adding an image as a background */
     background-image: url("../images/lone-starfish-wide.jpg");
-    background-size: 33.9em;
+    background-size: 20em;
     background-position: center;
     background-repeat: no-repeat;
     text-align:center;
     color: white;
-    font-size: 3rem;
-    padding: 6em 4em 4em 4em
+    font-size: 4rem;
+    padding: 4em 1em 2em 1em
 }
 
 h2, h3, h4{
     font-size: 1.8rem;
+  
+
+}
+h3, h4{
+    font-size: 1.8rem;
+    padding: 0.5em;
+
 }
     nav ul li a:link {
    
@@ -80,7 +99,7 @@ a[href="#story"] {
 p{
     
     margin: 0.5rem 1rem;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
    
    
 }
@@ -99,19 +118,11 @@ article{
 
 
 /* choosing multiple elements to apply same styles */
-nav, main, footer {
 
-    background-color:rgba(255, 255, 255, 0.2) ;
-    padding:1em;
-    max-width: 1600px;
-    margin: auto;
-   
-
-}
 div, input,
 textarea {
     /* changing the size of the text and input areas */
-   width: 97%;
+   width: 96%;
     padding: 1.5rem;
    
     
@@ -122,7 +133,11 @@ textarea {
 }
 /* id selector */
 #radio input {
-    width: 1rem
+    width: 2rem
+    
+    
+    
+    
 }
 /* styling the submit button */
 button {
@@ -133,4 +148,5 @@ button {
 footer{ 
     /* chaning the placement of the copyright */
     text-align: right;
+    padding: 1.5rem;
 }
