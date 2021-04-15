@@ -1,0 +1,783 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* CSS reset */
+/* mobile viwe */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+
+}
+
+
+h1 {
+    margin-top: 2rem;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+     margin-left: 1rem;
+     
+}
+h2 {
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 40px;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*setting up the imgs size */
+
+img {
+    width: 100%;
+    align-items: center;
+}
+
+/* styling the a tags */
+a {
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/* styling the header Area */
+
+.site-header .containerheader {
+    max-width: 1200px;
+    background: #222;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+.list-nav {
+    margin-top: -3em;
+
+}
+
+.nav-list .home {
+    color: #222;
+
+}
+
+.nav-list a {
+    color: orange;
+    padding: 1em;
+    display: block;
+}
+
+.nav-list a,
+.nav-list a:link .nav-list a:visited {
+    background: none;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.logo-background {
+    background: #c78c06;
+    padding-bottom: 4em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+nav {
+    text-align: center;
+    font-size: 1rem;
+}
+/* styling the search area and search icon  */
+.searchicon form {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.searchbox {
+    padding: 1em;
+    width: 100%;
+}
+
+
+.search {
+    padding-right: 1em;
+    background-color: rgb(17, 17, 17);
+    text-decoration: none;
+    color: #d1960a;
+    border: 1px solid #d3970a;
+}
+
+
+/* styling the main area */
+.main {
+    margin: 0 auto;
+    background: rgb(0, 0, 0) url("../imges/main-banner.jpg") no-repeat;
+    padding-top: 4em;
+    margin-top: 0rem;
+    background-size: 49em;
+    background-position: center;
+}
+
+.introduction {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 380px;
+   padding-top:2em;
+   padding-bottom:30em;
+   color: white;
+}
+
+
+p {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 30px;
+}
+  
+.main p {
+   
+    color: white;
+}
+
+
+
+.main-button {
+    background: #c78c06;
+    color: #222;
+    margin-left: 1rem;
+    
+    
+}
+/* styling about us section */
+
+.about-us {
+    background-color: #ffe6ac;
+}
+
+
+.aboutusimg {
+    max-width:95% ;
+    margin-left: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+/* styling services section */
+
+.services {
+    width: 100%;
+    max-width: 1200px;
+} 
+
+.s-header{
+    margin-bottom:2rem;
+}
+
+
+.digital, .market, .video, .web, .print {
+    background: #fce6b4;
+    padding-bottom: 3em;
+    margin-bottom: 1rem;
+    
+   
+}
+
+
+/* styling the vision section */
+.vision {
+    width: 100%;
+    background: url(../imges/vision.jpg);
+    color: white;
+    height: 350px;
+    padding-top: 1em;
+}
+
+.vision-container p {
+    margin-top: -2rem;
+   
+}
+
+.v-border {
+    border: 1px solid #c78c06;
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+/* styling the team Section */
+.Team {
+    margin-left: 2rem;
+    max-width: 1200px;
+}
+
+
+
+.JohnDoe {
+    background: #ffe6ac;
+    padding-top: 0.50em;
+    margin-left: 0rem;
+}
+
+.description{
+margin-top:-2rem;
+padding-bottom:1em;
+}
+.BobRite {
+    background: #ffe6ac;
+    padding-top: 0.50em;
+    margin-left: 0rem;
+}
+
+.job {
+    margin-top: -4rem;
+    border-bottom: 3px solid #ca9007;
+    padding-right:1em;
+    font-weight: bold;
+}
+
+.job p {
+    margin-top: -1rem;
+    padding-bottom: 1em;
+}
+
+/*styling the contact area */
+.contact {
+    margin-left: 2rem;
+}
+.contact h1 {
+    margin-left: 0rem;
+}
+
+.contactform h2 {
+    margin-left: 0rem;
+}
+
+
+.name,
+.email,
+.message {
+    margin-bottom: 1rem;
+}
+
+.send {
+    background-color: rgb(41, 40, 40);
+    color: #d4980a;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+
+.contact input {
+    max-width: 1200px;
+    margin-top: 1rem;
+    padding: 1em;
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+textarea {
+    display: block;
+    height: 150px;
+    max-width: 1200px;
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+.contact {
+    margin-left: 2rem;
+}
+
+
+
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #222;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 8em;
+    padding-left: 1em;
+    width: 80%;
+}
+
+table thead:nth-child(1) {
+    background: rgb(253, 241, 203);
+}
+table th:nth-child(2) table td:nth-child(2) {
+    width: auto;
+}
+
+/* Styling the location Section */
+
+
+iframe {
+    width: 98%;
+    margin-top: -4rem;
+}
+
+/* Styling the footer */
+
+footer {
+    background: #222;
+    color: #c78c06;
+    margin-top: 1rem;
+    padding-bottom: 0.50em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+
+.unsplash {
+    margin-left: -1.3rem;
+    text-decoration: underline;
+    background: none;
+    color: #c78c06;
+}
+
+/*  Desktop view */
+
+@media screen and (min-width:760px) {
+
+    
+    header {
+        background: #222;
+        height: 120px;
+    }
+
+    .containerheader {
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        background: none;
+        align-items: center;
+
+
+    }
+    
+
+    .logo {
+        margin-top: 0.4rem;
+    }
+
+    .logo-background {
+        background: none;
+        height: 200px;
+    }
+
+    .nav-list {
+        display: flex;
+        margin-left: 4rem;
+        margin-top: -1rem;
+
+    }
+
+    .nav-list .home {
+        color: #222;
+        padding-left:2em;
+        padding-right:2em;
+        background-color: rgb(206, 147, 38);
+    }
+
+    .searchicon {
+        margin-top: -5rem;
+        min-width: 150px;
+       
+
+    }
+
+    .main{
+        margin: 0 auto;
+        padding-left: 1em;
+        padding-right: .5em;
+
+    }
+
+    .introduction {
+        max-width: 1200px;
+    }
+
+    .welcome {
+        font-size: 97px;
+        line-height: 90px;
+    }
+
+    a {
+        background-color: #c78c06;
+        text-decoration: none;
+        color: #222;
+        margin-left: 1.5rem;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+
+    
+
+    /* styling about us section  */
+    .about-us {
+        display: flex;  
+         max-width: auto; 
+         margin:auto;
+        padding-left: 8.5em;
+     
+
+    }
+
+
+    .about-us p {
+        padding-right: 11em;
+        margin-top: -2rem;
+    }
+
+    .aboutusimg {
+        height: 340px;
+        width: auto;
+        width:45%;
+    }
+
+    
+
+    /* styling services sectino using grid */
+    .services {
+        display: grid;
+        margin: auto;
+        margin-top: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        column-gap: 1em;
+        grid-template-areas:
+            "title title title title title title"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print";
+    }
+
+    .services h2 {
+        grid-area: title;
+    }
+
+    .digital {
+        grid-area: digital;
+    }
+
+    .digital p {
+        padding-right: 1em;
+    }
+
+    .market {
+        grid-area: marketing;
+    }
+
+    .market p {
+        padding-right: 1em;
+    }
+
+    .video {
+        grid-area: video;
+        margin-bottom: 5rem;
+        padding-bottom: 0em;
+    }
+
+    .video p {
+        padding-right: 1em;
+    }
+
+    .web {
+        grid-area: web;
+        padding-bottom: 0em;
+        margin-bottom: 5rem;
+
+    }
+
+    .web p {
+        padding-right: 1em;
+    }
+
+    .print {
+        grid-area: print;
+        padding-bottom: 0em;
+        margin-bottom: 5rem;
+    }
+
+    .print p {
+        padding-right: 1em;
+    }
+
+    /* styling the buttons using block */
+    .button {
+        display: block;
+        width: 95%;
+        color: white;
+        background: #222;
+        text-align: center;
+
+    }
+
+  
+
+
+    /* stylimg team section using  grid */
+
+    .Team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        margin: auto;
+        grid-template-areas:
+            "title title"
+            "john j-text"
+            "b-text bob";
+    }
+
+    .Team>h1 {
+        grid-area: title;
+    }
+
+    .johndoe-pic {
+        grid-area: john;
+
+    }
+
+    .JohnDoe {
+        grid-area: j-text;
+        margin-left: -1em;
+        width: 100%;
+    }
+
+    .JohnDoe>p {
+        padding-right: 1em;
+    }
+
+    .bobrite-pic {
+        grid-area: bob;
+        margin-left: -1rem;
+        width: 100%;
+    }
+
+    .BobRite {
+        grid-aRea: b-text;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+
+    .BobRite p {
+        padding-right: 1em;
+    }
+
+    
+    .contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin: auto;
+        grid-template-areas:
+            " grid1 grid1"
+            " form location"
+            "schedule schedule"
+        ;
+    }
+.grid1 {
+    grid-area: grid1;
+}
+    .location {
+        grid-area: location;
+    }
+
+    .contactform {
+        grid-area: form;
+    }
+.schedule {
+      
+        grid-area: schedule;
+        max-width: 100%;
+    }
+/* changing the size of the text and input areas */
+    div, input,
+textarea {
+    padding: 1rem;
+}
+    textarea {
+        height: 8em;
+        resize: none;
+    }
+
+    .logo {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+    }
+    
+    .introduction {
+        padding: 0rem;
+    }
+    .main{
+        background-size: 90em;
+        background-position: center;
+
+    }
+    
+}
