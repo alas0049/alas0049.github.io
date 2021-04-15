@@ -757,8 +757,8 @@ blockquote {
         margin: auto;
         grid-template-areas:
             "title title"
-            "pic1 text1"
-            "text2 pic2";
+            "john t-john"
+            "t-bob bob";
     }
 
     .Team>h1 {
@@ -766,12 +766,12 @@ blockquote {
     }
 
     .john-pic {
-        grid-area: pic1;
+        grid-area: john;
 
     }
 
     .JohnDoe {
-        grid-area: text1;
+        grid-area: t-john;
         margin-left: -1em;
         width: 100%;
     }
@@ -781,13 +781,13 @@ blockquote {
     }
 
     .bobrite-pic {
-        grid-area: pic2;
+        grid-area: bob;
         margin-left: -1rem;
         width: 100%;
     }
 
     .BobRite {
-        grid-aRea: text2;
+        grid-aRea: t-bob;
         margin-left: 0rem;
         margin-right: 1rem;
     }
@@ -831,9 +831,7 @@ blockquote {
     font-size: 15px;
 }
 
-    iframe {
-        grid-area: location;
-    }
+    
 
     table tr:nth-child(1),
     table th:nth-child(1) {
@@ -854,6 +852,12 @@ blockquote {
         height: 570px;
         padding-top: 4em;
         margin-top: 0rem;
+    }
+    /* preventing the textarea from moving */ 
+    
+    textarea {
+        height: 8em;
+        resize: none;
     }
 
 }
