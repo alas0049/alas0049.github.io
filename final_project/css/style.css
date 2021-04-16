@@ -272,6 +272,7 @@ nav {
     height: 380px;
    padding-top:2em;
    padding-bottom:26em;
+   background-repeat: no-repeat;
 }
 
 
@@ -305,7 +306,7 @@ p {
 
 }
 
-/* Headings */
+
 
 
 
