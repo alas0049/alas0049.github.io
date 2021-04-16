@@ -376,11 +376,13 @@ i {
 /* styling the vision section */
 .vision {
     width: 100%;
-    background: url(../imges/vision.jpg);
+    background: url(../imges/vision.jpg) no-repeat;
     color: white;
     height: 370px;
     padding-top: 1em;
     margin-top:2rem;
+    background-size: 100%;
+    background-position: center;
 }
 
 .v-container>p {
