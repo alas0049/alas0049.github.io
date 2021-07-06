@@ -1,19 +1,27 @@
+
+/* * This is the css section for styling all pages. Mobile layout alwayes goes first. */
+
+/* The whole page will have pink background and Arial font  */
 html {
     background-color:#FCD7EC;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+/* The images will be responsive for deffrent screen sizes and making the image to have rounded corners using "border-radius */
 .background {
 max-width: 100%;
 border-radius: 500px;
 margin-top: -2rem;
 
 }
+
+/* Changing the size of the logo and possition it in the top right of the page  */
  .logo {
      max-width: 100%;
      width: 20%;
      margin-bottom: -3.5rem;
  }
-
+/* The nav link will have no underlines and no other decoration. The back-ground-colour is purpol since the background is pink. /* The list will no longer have underline and there is some space between every item */
+*/
 .nav-list a {
     color: #926a78;
     font-weight: bold;
@@ -37,7 +45,7 @@ nav {
     border: solid 0px papayawhip;
     padding-bottom: 1rem;
 }
- /* Adding some animation to the nav section */
+ /* Adding some animation to the nav section, so it will pop up when hovering */
 
 ul a:hover {
     animation-duration: 0.6s;
@@ -51,9 +59,7 @@ nav ul {
   }
 
 
-
-  
-
+/* The big image in the header will be rotating when clicking on it */
 .background:active {
   animation-duration: 2s;
   font-size:30px;
@@ -64,6 +70,7 @@ nav ul {
    border: #f8b5f8 4px solid;
 }
 
+/* The logo in the header will be moving  when hovering on it */
 .logo:hover {
     animation-duration: 2s;
     font-size:30px;
@@ -73,7 +80,7 @@ nav ul {
      transform: scale(1) rotateY(2turn);
      border: #f8b5f8 4px solid;
   }
-
+  /* Styling the welcoming message in the home page and adding a background-colour  */
   .main {
       border: papayawhip;
       background-color: #b85d929d;
@@ -86,6 +93,8 @@ nav ul {
       font-size: 15px;
       max-width: 100%;
   }
+  
+  /* This section is the footer It has the social media icons in the middle with a background-colour  */
   footer {
       text-align: center;
       margin-top: 3rem;
@@ -94,6 +103,9 @@ nav ul {
       margin-bottom: -2rem;
     }
     
+
+    /* all pages will have same header and same style */
+    /* now styling the about page in with adding background-colour and some other customizing such as padding, margin to located it perfectly  */
     .about {
         background-color: rgba(226, 211, 202, 0.425);
         font-size: 15px;
@@ -111,7 +123,7 @@ nav ul {
 
 
     /* contact page  */
-    /*styling the contact area */
+    /*styling the contact area by styling the form location, size colour and adding some animation for the "send" botton*/
 
 .contactform>h2 {
     margin-left: 0rem;
@@ -125,6 +137,10 @@ nav ul {
     color: rgb(104, 68, 104);
 }
 
+
+/* is is the customized button thathas a different colour.
+There is also a shadow at the bottom  */
+
 .send {
     background-color: rgb(131, 81, 120);
     color: #eed7f1;
@@ -133,7 +149,7 @@ nav ul {
 }
 
 .send:hover{
-    animation-name: start;
+  animation-name: start;
   animation-duration: 1s;
   transition: 0.5s;
   transform: scale(1.3); 
@@ -170,14 +186,8 @@ textarea {
 margin-left:0rem;
 }
 
+    /* Tablet view using media query  */
 
-
-
-
-
-
-
-    /* Tablet view  */
     @media screen and (min-width:800px){ 
 
 
@@ -185,10 +195,8 @@ margin-left:0rem;
             margin-top: -6rem;
     }
     
-
-       
-      
-            .about {
+    /* styling the about section in the about page using grid so the about wil have diffrent appearenses intablet and descktop screen  */
+     .about {
                 margin: outo;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -234,7 +242,7 @@ margin-left:0rem;
         }
      
   
-     
+/* desktop view  */
 @media screen and (min-width: 1000px) {
     .list-nav {
         margin-top: -3.5rem;
@@ -263,7 +271,7 @@ margin-left:0rem;
 
         
 
-         /* stylimg about us section using  grid in about page */
+ /* stylimg about us section using  grid in about page in descktop view */
 
     
     

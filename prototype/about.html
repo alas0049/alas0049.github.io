@@ -1,3 +1,5 @@
+<!-- This is the mid term assignment. First page is the Home Page -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Prototype</title>
 </head>
+
+<!-- This section is the header area I started by adding the logo image first-->
 <body>
     <div class="body">
         <img class="logo" src="./images/logo.jpg" alt="#">
+
+         <!-- This is the navigation area which is part of the header where you have the home, about and contact section, i used <ul> tag together with the <li> tag to create unordered lists.-->
     <nav class="list-nav">
         <ul class="nav-list">
        <li> <a href="./index.html">Home</a></li>
@@ -19,23 +25,19 @@
 
     <main>
         <div>
-        
-        <img class="background" src="images/ice-cream.jpg" 
+         <!-- The bannern contains big image, i used <img> tag to add the image, srcset defines the set of images we will allow the browser to choose between, and what size each image is. Each set of image information is separated from the previous one by a comma, this will be aplaying to all the images in the website-->
+         <img class="background" src="images/ice-cream.jpg" 
         alt="Ice cream background"
         srcset="images/ice-cream-320.jpg 320w,
                 images/ice-cream-480.jpg 480w,
                 images/ice-cream-720.jpg 720w,
                 images/ice-cream-960.jpg 960w">
         </div>
-
-       
-        
         </main>
 
         <section class="about">
             <h1>About Us</h1>
-
-            <!-- the owner Section -->
+             <!-- This section is going to talk about the owner and the prubuct in the about page, I added an images for the owner and the ice cream with some content by using <img> to add the image, <h2> to add a header with bigger font and <p> to add a paragraph -->
   <img src="images/about-960.jpg" 
   alt="owner" class="owner-pic"
   srcset="images/about-320.jpg 320w,
@@ -43,7 +45,7 @@
   images/about-720.jpg 720w,
   images/about-960.jpg 960w"> 
             <div class="the-owner">
-              
+              <!-- owner sectio  -->
                 <h2>Alma Doel</h2>
                 <p class="founder">The Founder</p>
                 <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusamus facere perspiciatis repellat
@@ -82,21 +84,12 @@
                     nostrum! Nihil corporis itaque vitae qui recusandae magnam. Illo, sit reprehenderit.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel accusamus facere perspiciatis repellat
                     quos consequatur iste officia eveniet optio
-                    nostrum! Nihil corporis itaque vitae qui recusandae magnam. Illo, sit reprehenderit.
-                    
-                   
-                    
+                    nostrum! Nihil corporis itaque vitae qui recusandae magnam. Illo, sit reprehenderit.   
                 </p>
             </div>
         </section>
-
-
-
-
-
-
-
-        <footer>
+    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
+      <footer>
             <p>&copy;Copyright, catchy ice cream 2020 </p>
             <img class="facebook" src="images/facebook.svg" alt="facebook">
     <img  class="instagram" src="images/instagram.svg" alt="instagram">
