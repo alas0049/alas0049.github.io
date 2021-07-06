@@ -21,7 +21,7 @@ margin-top: -2rem;
      margin-bottom: -3.5rem;
  }
 /* The nav link will have no underlines and no other decoration. The back-ground-colour is purpol since the background is pink. /* The list will no longer have underline and there is some space between every item */
-*/
+
 .nav-list a {
     color: #926a78;
     font-weight: bold;
@@ -34,6 +34,7 @@ margin-top: -2rem;
 
 .list-nav {
         margin-top: -3.5rem;
+        text-decoration: none;
 }
 
 
