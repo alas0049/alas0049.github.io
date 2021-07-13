@@ -1,4 +1,7 @@
 
+
+
+
 /* * This is the css section for styling all pages. Mobile layout alwayes goes first. */
 
 /* The whole page will have pink background and Arial font  */
@@ -198,7 +201,6 @@ margin-left:0rem;
     
     /* styling the about section in the about page using grid so the about wil have diffrent appearenses intablet and descktop screen  */
      .about {
-                margin: outo;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto 1fr 1fr;
