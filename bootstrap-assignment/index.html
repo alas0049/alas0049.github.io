@@ -1,0 +1,140 @@
+
+
+<!------ Images are taken from https://picsum.photos/ ------>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <title>Bootstrap Assignment</title>
+</head>
+
+<body>
+  <!-- This is the header of the bootstrap assignment -->
+
+  <header>
+    <h1 class="display-1 text-center">Welcome to my Bootstrap Assignment</h1>
+
+  
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md text-center m-4">
+      <!-- mx-auto is used to center the width. -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class=" nav-link" href="#">What is bootstrap?</a></li>
+        <li class="nav-item"><a class=" nav-link" href="#">How to use bootstrap?</a></li>
+        <li class="nav-item"><a class=" nav-link" href="#">What are the banafits of using bootstrap?</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+    <div class="row">
+      <div class="col-md-4 mb-4 p-5">
+        <h2>What is bootstrap?</h2>
+        <p>Bootstrap is a program where it gives you a bunch of components, sets, responsive items, and
+            much more. It doesn't not require that much work. It is just a starting point.</p>
+        <button type="button" class="btn btn-outline-secondary">Read More</button>
+      </div>
+      <div class="col-md-4 mb-4 p-5">
+        <h2>How to use bootstrap?</h2>
+        <p>Step 1: Setup and overview. Create an HTML page. Load Bootstrap via CDN or host it locally. Include jQuery. Load Bootstrap JavaScript. Put it all together.
+            Step 2: Design your landing page. Add a navigation bar. Include custom CSS. Create a page content container. Add background image and custom JavaScript..</p>
+        <button type="button" class="btn btn-outline-secondary">Read More</button>
+      </div>
+      <div class="col-md-4 mb-4 p-5">
+        <h2>What are the banafits of using bootstrap?</h2>
+        <p>Bootstrap is a framework that makes it easier and faster to create websites. It provides design templates for typography, forms, buttons, tables, navigation, modals, picture carousels, and more that are based on HTML and CSS. It also allows you to use JavaScript plugins... The responsive CSS in Bootstrap adapts for phones, tablets, and desktops. Below I will creat diffrent cards using bootstrap</p>
+        <button type="button" class="btn btn-outline-secondary">Read More</button>
+      </div>
+    </div>
+    <hr>
+
+  <h2 class="card-body text-center">Creating cards using bootstrap</h2>
+  <div class="container d-grid gap-3">
+  <p>Here is the card section where 3 cards will display in one row. It is just a simple card with text, button.
+      One of them contains a badge, because it is a new card. Everything will look squished at first, then it will become bigger 
+    and more space.
+  The gap-3 means the space between items. It is responsive when you use it right away, better to use it than margin. </p>
+  
+    <div class="row gap-1">
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+
+            <!-- img-fluid means that it will make images responsive by default -->
+            <!-- Mb is basically margin botttom using bootstrap. It is also used to add space or push to whatever direction it is 
+            set to -->
+            <img class="img-fluid mb-4 mx-auto d-block" src="https://picsum.photos/200" alt="placeholder">
+            <h5 class="card-title">card-1</h5>
+            <p class="card-text text-success">Success</p>
+            <p class="card-text text-warning">Warning </p>
+            <p class="card-text text-danger">Danger </p>
+            <p class="card-text">Black </p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img class="img-fluid mb-4 mx-auto d-block" src="https://picsum.photos/200" alt="placeholder">
+            <h5 class="card-title">Card-2<span class="badge bg-success md-ml-3">New</span></h5>
+            <p class="card-text text-success">Green </p>
+            <p class="card-text text-warning">Yellow </p>
+            <p class="card-text text-danger">Red </p>
+            <p class="card-text">Black </p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-center">
+          <div class="card-body">
+            <img class="img-fluid mb-4 mx-auto d-block" src="https://picsum.photos/200" alt="placeholder">
+            <h5 class="card-title">Card-3</h5>
+            <p class="card-text text-success">Success</p>
+            <p class="card-text text-warning ">Warning </p>
+            <p class="card-text text-danger">Danger </p>
+            <p class="card-text">Black</p>
+            <a href="#" class="btn btn-warning">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>This is the pagination section. It provides a lot of links that will take you from one page to another.
+        It is not a navbar because it will bring you to a different page full of specific items. For example, the nav
+      bar will often have about page, contact page, services page...But pagination is good if you have too many items
+    on one page and you need more pages. In this case, there is 3 pages, and you can click previous to go back to the
+    page before </p>
+  </div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link text-secondary" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link text-secondary" href="#">1</a></li>
+    <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
+    <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
+    <li class="page-item"><a class="page-link text-secondary" href="#">Next</a></li>
+  </ul>
+
+
+
+  <div class="alert alert-success mb-3 m-4" role="alert">
+    <p class="text-center">This is the alert section was creating using bootstrap. Since it is green, that means something good or something was done successfully
+      <button type="button" class="btn btn-success mx-auto d-block mt-2">Done</button> </p>
+  </div>
+ 
+  <footer>
+    <div class="card mt-4 text-white bg-dark">
+        <p class="text-center"> This is the footer which still uses card </p>
+      <div class="card-body">
+        <p class="text-center"> &copy;Azhar, Bootstrap, 2021</p>
+    </div>
+</div>
+  </footer>
+</body>
+</html>
