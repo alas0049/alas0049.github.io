@@ -9,17 +9,19 @@ html {
     background-color:#ccb79b8a;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(109, 79, 55);
+    font-family: Arial, Helvetica, sans-serif;
+
    
 
 }
-/* The images will be responsive for deffrent screen sizes and making the image to have rounded corners using "border-radius */
+/* The images will be responsive for deffrent screen sizes*/
 .background {
 max-width: 100%;
 margin-top: 0.3rem;
 
 }
 
-/* Changing the size of the logo and possition it in the top left of the page  */
+/* Changing the size of the logo and possition it in the top left of the page and making the image to have rounded corners using "border-radius  */
  .logo {
      max-width: 100%;
      width: 20%;
@@ -61,8 +63,7 @@ ul a:hover {
     background-color: rgba(197, 142, 167, 0.658);
 }
 
-/* The nav link will have no underlines and no other decoration. The back-ground-colour is purpol since the background is pink. /* The list will no longer have underline and there is some space between every item */
-
+ /* The nav link will have no underlines and no other decoration. */
 .nav-list a {
     color: rgb(109, 79, 55);
     font-weight: bold;
@@ -103,8 +104,6 @@ nav ul {
       border: papayawhip;
       background-color: #aa886096;
       padding: 2rem;
-      /* margin-top:2rem;
-      margin-bottom: 2rem; */
       text-align: center;
       color: rgb(109, 79, 55);
       font-size: 15px;
@@ -121,7 +120,8 @@ nav ul {
       color: rgb(109, 79, 55);
     }
     
-
+/* all pages will have same header and same style */
+    /* now styling the about page in with adding background-colour */
     /* About page  */
 
   img {
@@ -133,7 +133,8 @@ nav ul {
       max-width: 100%;
   }
   
-
+    /* contact page  */
+/*styling the contact area by styling the form location, size colour and adding some animation for the "send" botton*/
   .contactform>h2 {
     margin-left: 0rem;
     color: rgb(109, 79, 55);
@@ -147,7 +148,7 @@ nav ul {
 }
 
 
-/* is is the customized button thathas a different colour.
+/* is is the customized button that has a different colour.
 There is also a shadow at the bottom  */
 
 .send {
@@ -200,10 +201,11 @@ margin-left:0rem;
 padding: 2rem;
 }
 
+    /* Tablet view using media query  */
 
 @media screen and (min-width:768px) { 
 
-
+    /* adding some customization such as padding, margin to locat everythig perfectly   */
     .list-nav {
         margin-top: -18rem;
         }
@@ -277,6 +279,7 @@ padding: 2rem;
 
             
             } 
+    /* styling the portfolio section in the about page using grid so the about wil have diffrent appearenses intablet and descktop screen  */
 
             .port-2 {
                 max-width: 1200px;
@@ -405,12 +408,13 @@ padding: 2rem;
          }
           
   }    
-               
+
+     /* desktop view  */              
   @media screen and (min-width: 1024px) {
 
 
-
-    .main{
+    /* styling the about section in the about page using grid so the about wil have diffrent appearenses intablet and descktop screen  */
+        .main{
         background-color: #aa886096;
         margin: 2rem;
         padding: 2rem;
@@ -445,8 +449,6 @@ padding: 2rem;
     .about-me {
         grid-area: about-me;
         font-size: 20px;
-        /* padding-left: 6rem; */
-  
     }
 
 
