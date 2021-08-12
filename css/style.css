@@ -27,6 +27,40 @@ margin-top: 0.3rem;
      border-radius: 100px;
      margin-left: 1rem;
  }
+
+/* Adding some animation to the logo and nav section , so it will be noitcable and have different coulors */
+
+
+ .logo, li {
+     position: relative;
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 50px #0f0,
+                  0 0 100px #0f0,
+                  0 0 150px #0f0,
+                  0 0 200px #0f0,
+                  0 0 250px #0f0;
+animation: animate 5s linear infinite;                  
+ }
+
+ @keyframes animate {
+     0% {
+         filter: hue-rotate(0deg);
+     }
+     0% {
+        filter: hue-rotate(360deg);
+    }
+ }
+
+/* Adding some transition to the nav section, so it will pop up when hovering */
+
+ul a:hover {
+    animation-duration: 0.6s;
+    transition: 0.4s;
+    transform: scale(1);
+    border: 3px white solid;
+    background-color: rgba(197, 142, 167, 0.658);
+}
+
 /* The nav link will have no underlines and no other decoration. The back-ground-colour is purpol since the background is pink. /* The list will no longer have underline and there is some space between every item */
 
 .nav-list a {
@@ -132,6 +166,9 @@ There is also a shadow at the bottom  */
   }
 
 
+.contact-img{
+    display: none;
+}
 
 .contact input {
     max-width: 1200px;
@@ -153,14 +190,15 @@ textarea {
     background-color: #aa886096;
     padding: 2rem;
     border-radius: 50px;
-    margin-top: 2rem;
 }
 
 
 .schedule > h2{
 margin-left:0rem;
 }
-
+.contact {
+padding: 2rem;
+}
 
 
 @media screen and (min-width:768px) { 
@@ -219,11 +257,11 @@ margin-left:0rem;
                 padding: 2rem;
                 margin-top: -1rem;
                 font-size: 18px;
+                background-color: #aa886096;
+
             }
             
-            .landing-img {
-                
-            }
+           
             
             .portrait-t {
                 padding: 2rem;
@@ -235,11 +273,136 @@ margin-left:0rem;
                 padding: 2rem;
                 margin-top: -1rem;
                 font-size: 18px;
+                background-color: #aa886096;
+
             
             } 
 
-           
+            .port-2 {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: #aa886096;
+                margin: 4rem;
+                padding: 2rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto 1fr 1fr;
+                grid-template-areas:
+                
+                "poster-t branding-t"
+                "poster branding "
+                "poster-img branding-img"
+                "small-t larg-t"
+                "small-img larg-img"
+                "small larg";
+            }
+        
+        
+            .branding-t{
+                grid-area: branding-t;
+                text-align: center;
+            }
+        
+            .poster-t{
+                grid-area:poster-t;
+                text-align: center;
+        
+            }
+        
+            .small-t{
+                grid-area: small-t;
+                margin-top: -8.5rem;
+                text-align: center;
+                padding-top: 2rem;
+        
+        
+                }          
+        
+                .larg-t {
+                    
+                    grid-area: larg-t;
+                    margin-top: -8rem;
+                    text-align: center;
+                   padding-top: 2rem;
+        
+                 
+                   }  
+            .branding-img {
+                grid-area: branding-img;
+                max-width: 100%;
+                margin-left: 1rem;
+               
+              
+            }
+        
+            .poster-img {
+                grid-area:poster-img;
+                max-width: 100%;
+                margin-left: -1rem;
+        
+               
+            }
+        
+        
+            .small-img {
+                
+                grid-area: small-img;
+                max-width: 100%;
+                margin-left: -1rem;
+        
+        
+                }          
+        
+          .larg-img {
+                    
+                    grid-area: larg-img;
+                    max-width: 100%;  
+                    margin-left: 1rem;
+        
+                  
+                }  
+            
+        
+            .branding {
+                grid-area:branding;
+                padding-left: 1.5rem;
+                font-size: 18px;
+              
+                }
+        
+            .poster {
+                grid-area: poster;
+                padding-left: -1rem;
+                font-size: 18px;
+             
+              
+                }
           
+        
+            .small {
+                
+            grid-area: small;
+        
+            
+            }          
+        
+        
+            .larg {
+                
+            grid-area: larg;
+            padding-left: 1.5rem;
+        
+           
+           }          
+        
+         .contact-img{
+             display: block;
+             width: 250px;
+         } 
+
+         .contactform{
+             margin-top: -1rem;
+         }
           
   }    
                
@@ -283,32 +446,8 @@ margin-left:0rem;
         grid-area: about-me;
         font-size: 20px;
         /* padding-left: 6rem; */
-        
-       
-        
-       
-       
-       
-       
+  
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -364,132 +503,31 @@ margin-left:0rem;
     .landing-page {
         grid-area:landing-page;
         margin-left: -4.2rem;   
+        background-color: transparent;
     }
 
     .portrait {
     grid-area: portrait;
+    background-color: transparent;
      }
-  
+   
 
-/* ...................................... */
+     .port-2{
+         max-width: 1200px;
+     }
+     .larg-t {
+         margin-top: -15rem;
+     }
 
-    .port-2 {
-        background-color: #aa886096;
-        margin: 4rem;
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr;
-        grid-template-areas:
-        
-        "poster-t branding-t"
-        "poster branding "
-        "poster-img branding-img"
-        "small-t larg-t"
-        "small-img larg-img"
-        "small larg";
+     .small-t {
+        margin-top: -15rem;
     }
 
-
-    .branding-t{
-        grid-area: branding-t;
-        text-align: center;
+    .contact-img{
+        display: none;
     }
-
-    .poster-t{
-        grid-area:poster-t;
-        text-align: center;
-
-    }
-
-    .small-t{
-        grid-area: small-t;
-        margin-top: -16rem;
-        text-align: center;
-        padding-top: 2rem;
-
-
-        }          
-
-        .larg-t {
-            
-            grid-area: larg-t;
-            margin-top: -16rem;
-            text-align: center;
-           padding-top: 2rem;
-
-         
-           }  
-    .branding-img {
-        grid-area: branding-img;
-        max-width: 100%;
-        margin-left: 1rem;
-       
-      
-    }
-
-    .poster-img {
-        grid-area:poster-img;
-        max-width: 100%;
-        margin-left: -1rem;
-
-       
-    }
-
-
-    .small-img {
-        
-        grid-area: small-img;
-        max-width: 100%;
-        margin-left: -1rem;
-
-
-        }          
-
-  .larg-img {
-            
-            grid-area: larg-img;
-            max-width: 100%;  
-            margin-left: 1rem;
-
-          
-        }  
-    
-
-    .branding {
-        grid-area:branding;
-        padding-left: 1.5rem;
-        font-size: 18px;
-      
-        }
-
-    .poster {
-        grid-area: poster;
-        padding-left: -1rem;
-        font-size: 18px;
-     
-      
-        }
-  
-
-    .small {
-        
-    grid-area: small;
 
     
-    }          
-
-
-    .larg {
-        
-    grid-area: larg;
-    padding-left: 1.5rem;
-
-   
-   }          
-
-   
-/* .................................... */
         
     }
         

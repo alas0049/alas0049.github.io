@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Web Porfolio</title>
 </head>
@@ -45,38 +46,48 @@
         
         
         </div>
-         </main>
-            <!-- This is the welcoming message in the home page I used the "p" to disply it as a paragraph -->
-            <section class="about">
-        <div class="main">
-            <img class="my-img" src="./images/image-960.jpg" 
-            alt="my-image"
-            srcset="images/image-320.jpg 320w,
-            images/image-480.jpg 480w,
-            images/image-720.jpg 720w"
-            sizes="(mic-width:960px) 50vw, 100vw">
         
         
-            <h1 class="about-t">About me</h1>
-            <p class="about-me">My name is Azhar Alashmori I am studying Interactive Media Design at Algonquin college. I want to become a UX/UI designer specialized in creating beautiful front-end websites with excellent digital interfaces. I love helping the clients bring the best of what they want, figuring out what they exactly need. I am passionate about taking mediocre designs, transforming them into the most innovative pieces.  For my career, I’m looking for exciting projects where I can explore solutions based on the client’s wishes and goals.
-            </p>
-        </div>
-   </section>
-    
-    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
+        <!-- adding  contact us form -->
+ <section class="contact container">
+     <div class="row">
+         <div class="col-12 col-md-6 col-lg-12">
+             <p>Thank you for taking the time and viewing my web-portfolio. Let me know if you have any questions or comments. I am happy to hear from you, even if you want to say hi. Please fill this form for any reason.</p>
+             <img class="contact-img" src="./images/my-image-960.jpg" alt="img">
 
+            </div>
+
+         <div class="contactform col-12 col-md-6 col-lg-12">
+             <h2>Send me a message for any questions</h2>
+              <!-- adding input fields with place holder text -->
+     
+             <form action="#" method="get">
+                 <div class="name">
+                     <label for="yourname">Full Name</label>
+                     <input type="text" id="yourname" name="yourname">
+                 </div>
+                 <div class="email">
+                     <label for="youremail">Email</label>
+                     <input type="email" id="youremail" name="youremail" required>
+                 </div>
+                 <div class="message">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message"></textarea>
+                 </div>
+                 <button class="send" type="submit">Send</button>
+             </form>
+         </div> 
+     </div>
+    
+</section>
+
+    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
     <footer>
-        <p>&copy;Copyright, Azhar Portfolio </p>
+        
+        <p>&copy;Copyright,Azhar Portfolio </p>
         <img class="facebook" src="images/facebook.svg" alt="facebook">
 <img  class="instagram" src="images/instagram.svg" alt="instagram">
     </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
 </body>
 </html>
-
-
-
-
-
-
-
