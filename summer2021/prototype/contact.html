@@ -1,0 +1,77 @@
+<!-- This is the mid term assignment. First page is the Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prototype</title>
+</head>
+
+<!-- This section is the header area I started by adding the logo image first, the banner will look the exact same thing in all pages, the only thing will change is the main content-->
+<body>
+    <div>
+        <img class="logo" src="./images/logo.jpg" 
+        alt="logo"
+        srcset="images/logo-320.jpg 320w,
+                images/logo-480.jpg 480w,
+                images/logo-720.jpg 720w,
+                images/logo-960.jpg 960w"
+                sizes="(mic-width:960px) 50vw, 100vw">
+
+    <nav class="list-nav">
+        <ul class="nav-list">
+       <li> <a href="./index.html">Home</a></li>
+      <li>  <a href="./about.html">About</a></li>
+       <li><a href="./contact.html">Contact</a></li> 
+        </ul>
+    </nav> </div>
+    
+    <main>
+        <div>
+        
+        <img class="background" src="images/ice-cream.jpg" 
+        alt="Ice cream background"
+        srcset="images/ice-cream-320.jpg 320w,
+                images/ice-cream-480.jpg 480w,
+                images/ice-cream-720.jpg 720w,
+                images/ice-cream-960.jpg 960w"
+                sizes="(mic-width:960px) 50vw, 100vw">
+        </div> </main>
+
+
+        
+        <!-- adding  contact us form -->
+ <section class="contact container">
+    
+    <div class="contactform">
+        <h2>Send Us a Message</h2>
+         <!-- adding input fields with place holder text -->
+
+        <form action="#" method="get">
+            <div class="name">
+                <label for="yourname">Full Name</label>
+                <input type="text" id="yourname" name="yourname">
+            </div>
+            <div class="email">
+                <label for="youremail">Email</label>
+                <input type="email" id="youremail" name="youremail" required>
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button class="send" type="submit">Send</button>
+        </form>
+    </div> </section>
+
+    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
+    <footer>
+        
+        <p>&copy;Copyright, catchy ice cream 2020 </p>
+        <img class="facebook" src="images/facebook.svg" alt="facebook">
+<img  class="instagram" src="images/instagram.svg" alt="instagram">
+    </footer>
+  
+</body>
+</html>

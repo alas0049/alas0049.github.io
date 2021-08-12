@@ -1,0 +1,70 @@
+<!-- This is the mid term assignment. First page is the Home Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prototype</title>
+</head>
+<body>
+         <!-- This section is the header area I started by adding the logo image first-->
+
+    <div>
+        <img class="logo" src="./images/logo.jpg" 
+        alt="logo"
+        srcset="images/logo-320.jpg 320w,
+                images/logo-480.jpg 480w,
+                images/logo-720.jpg 720w,
+                images/logo-960.jpg 960w"
+                sizes="(mic-width:960px) 50vw, 100vw">
+
+        <!-- This is the navigation area which is part of the header where you have the home, about and contact section, i used <ul> tag together with the <li> tag to create unordered lists.-->
+    <nav class="list-nav">
+        <ul class="nav-list">
+       <li> <a href="./index.html">Home</a></li>
+      <li>  <a href="./about.html">About</a></li>
+       <li><a href="./contact.html">Contact</a></li> 
+        </ul>
+    </nav> 
+    
+    <main>
+        <div>
+            <!-- The bannern contains big image, i used <img> tag to add the image, srcset defines the set of images we will allow the browser to choose between, and what size each image is. Each set of image information is separated from the previous one by a comma, this will be aplaying to all the images in the website-->
+        
+        <img class="background" src="images/ice-cream.jpg" 
+        alt="Ice cream background"
+        srcset="images/ice-cream-320.jpg 320w,
+                images/ice-cream-480.jpg 480w,
+                images/ice-cream-720.jpg 720w,
+                images/ice-cream-960.jpg 960w"
+                sizes="(mic-width:960px) 50vw, 100vw">
+        </div>
+        
+            <!-- This is the welcoming message in the home page I used the "p" to disply it as a paragraph -->
+
+        <div class="main">
+            <h1>Whatever mood you are in...</h1>
+            <p>Your flavour is waiting for you...</p>
+            <p> Do not forget to check out our new flavour, </p> <blockquote>"Dady deserves a cathcy ice cream"</blockquote>
+        </div>
+    </main>
+    
+    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
+
+    <footer>
+        <p>&copy;Copyright, catchy ice cream 2020 </p>
+        <img class="facebook" src="images/facebook.svg" alt="facebook">
+<img  class="instagram" src="images/instagram.svg" alt="instagram">
+    </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

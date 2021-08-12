@@ -1,0 +1,93 @@
+<!-- This is the final assignment-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Porfolio</title>
+</head>
+<body>
+         <!-- This section is the header area I started by adding the logo image first-->
+
+    <div>
+        <img class="logo" src="./images/logo.jpg" 
+        alt="logo"
+        srcset="images/logo-320.jpg 320w,
+                images/logo-480.jpg 480w,
+                images/logo-720.jpg 720w,
+                images/logo-960.jpg 960w"
+                sizes="(mic-width:960px) 50vw, 100vw">
+
+        <!-- This is the navigation area which is part of the header where you have the home, about and contact section, i used <ul> tag together with the <li> tag to create unordered lists.-->
+    <nav class="list-nav">
+        <ul class="nav-list">
+        <li> <a href="./index.html">Home</a></li>
+       <li> <a href="./about.html">About</a></li>
+      <li>  <a href="./portfolio.html">Portfolio</a></li>
+       <li><a href="./contact.html">Contact</a></li> 
+        </ul>
+    </nav> 
+    
+    <main>
+        <div>
+            <!-- The bannern contains big image, i used <img> tag to add the image, srcset defines the set of images we will allow the browser to choose between, and what size each image is. Each set of image information is separated from the previous one by a comma, this will be aplaying to all the images in the website-->
+        
+
+            <img class="background" src="./images/main-960.jpg" 
+            alt="main-image"
+            srcset="images/main-320.jpg 320w,
+            images/main-480.jpg 480w,
+            images/main-720.jpg 720w,
+            images/main-960.jpg 960w"
+            sizes="(mic-width:960px) 50vw, 100vw">
+        
+        
+        </div>
+        
+        
+        <!-- adding  contact us form -->
+ <section class="contact container">
+     <div class="row">
+         <div class="col-12 col-md-6 col-lg-12">
+             <p>Thank you for taking the time and viewing my web-portfolio. Let me know if you have any questions or comments. I am happy to hear from you, even if you want to say hi. Please fill this form for any reason.</p>
+             <img class="contact-img" src="./images/my-image-960.jpg" alt="img">
+
+            </div>
+
+         <div class="contactform col-12 col-md-6 col-lg-12">
+             <h2>Send me a message for any questions</h2>
+              <!-- adding input fields with place holder text -->
+     
+             <form action="#" method="get">
+                 <div class="name">
+                     <label for="yourname">Full Name</label>
+                     <input type="text" id="yourname" name="yourname">
+                 </div>
+                 <div class="email">
+                     <label for="youremail">Email</label>
+                     <input type="email" id="youremail" name="youremail" required>
+                 </div>
+                 <div class="message">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message"></textarea>
+                 </div>
+                 <button class="send" type="submit">Send</button>
+             </form>
+         </div> 
+     </div>
+    
+</section>
+
+    <!-- This section is the footer. Social media icons are usually displayed on the footer. -->
+    <footer>
+        
+        <p>&copy;Copyright,Azhar Portfolio </p>
+        <img class="facebook" src="images/facebook.svg" alt="facebook">
+<img  class="instagram" src="images/instagram.svg" alt="instagram">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+</body>
+</html>
