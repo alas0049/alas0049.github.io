@@ -10,6 +10,8 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(109, 79, 55);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
 
    
 
@@ -55,6 +57,7 @@ animation: animate 5s linear infinite;
 
 /* Adding some transition to the nav section, so it will pop up when hovering */
 
+
 ul a:hover {
     animation-duration: 0.6s;
     transition: 0.4s;
@@ -72,6 +75,10 @@ ul a:hover {
     text-decoration: none;
     margin-top: -1rem;
   
+}
+
+li{
+    margin-top: 1rem;
 }
 
 .list-nav {
@@ -140,6 +147,11 @@ nav ul {
     color: rgb(109, 79, 55);
 }
 
+ .contact p {
+        color: rgb(128, 105, 87);
+        margin-bottom: 2rem;
+    }
+
 .name,
 .email,
 .message {
@@ -190,7 +202,6 @@ textarea {
 .contactform {
     background-color: #aa886096;
     padding: 2rem;
-    border-radius: 50px;
 }
 
 
@@ -528,8 +539,6 @@ padding: 2rem;
     .contact-img{
         display: none;
     }
-
-    
         
     }
         
