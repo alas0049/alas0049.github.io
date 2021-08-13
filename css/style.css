@@ -386,7 +386,6 @@ padding: 2rem;
         
             .poster {
                 grid-area: poster;
-                padding-left: -1rem;
                 font-size: 18px;
              
               
